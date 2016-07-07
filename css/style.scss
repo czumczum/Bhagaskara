@@ -14,6 +14,7 @@ body {
 }
 header {
 	background: url("../img/main.jpg") no-repeat center top;
+	background-attachment: fixed;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
@@ -27,6 +28,10 @@ header {
 	@media (min-width: $thirDim) {
 		height: 80vh;
 		padding: 0 35vh;
+		justify-content: space-between;
+	}
+	@media (min-width: $forthDim) {
+		padding: 0 40vh;
 	}
 
 	i {
@@ -44,6 +49,11 @@ header {
 		font-size: 5vh;
 		@media (min-width: $firstDim) {
 			align-items: flex-end;
+		}
+		@media (min-width: $thirDim) {
+			font-size: 4vh;
+			height: 30vh;
+			margin-bottom: -50px;
 		}
 		.img {
 			background-image: url("../img/hex.png");
@@ -69,20 +79,16 @@ header {
 					align-self: flex-start;
 				}
 			}
+			@media (min-width: $thirDim) {
+				width: 13vh;
+				height: 14vh;
+			}
 		}
 	}
 	h1 {
-		color: white;
-		font-family: $fontHeader;
-		font-size: 10vh;
+		@include styleHeader(10vh);
 		margin-top: 50px;
-		font-weight: 300;
-		em {
-			font-weight: 300;
-			font-style: normal;
-			color: $fontColEm;
 		}
-	}
 	h2 {
 		font-family: $fontHeader;
 		color: white;
@@ -97,5 +103,42 @@ header {
 		font-weight: 300;
 		font-size: 2vh;
 		line-height: 1.5;
+	}
+
+	.scroll {
+		display: none;
+		@media (min-width: $thirDim) {
+			background-image: url("../img/arrow-down.png");
+			display: block;
+			width: 50px;
+			height: 55px;
+			margin-bottom: 15px;
+			background-size: cover;
+			}
+	}
+}
+nav {
+	display: none;
+	@media (min-width: $thirDim) {
+		display: flex;
+		background-color: white;
+		height: 13vh;
+		justify-content: space-around;
+		align-items: center;
+	}
+	h2 {
+		@include styleHeader(3vh);
+		color: $fontColtxt;
+	}
+	ul {
+		display: flex;
+		justify-content: space-between;
+		width: 35%;
+	}
+	li {
+		text-transform: uppercase;
+		color: #333;
+		font-size: 1.8vh;
+		font-family: $fontHeader;
 	}
 }

@@ -1,4 +1,5 @@
 $fontColEm: #cc00aa;
+$fontColtxt: #333;
 
 $fontHeader: 'Ubuntu', sans-serif;
 $fontText: 'Roboto', sans-serif;
@@ -7,3 +8,16 @@ $iconFont: 'Flaticon';
 $firstDim: 535px;
 $seconDim: 700px;
 $thirDim: 1024px;
+$forthDim: 1200px;
+
+@mixin styleHeader ($height) {
+  color: white;
+  font-size: $height;
+  font-family: $fontHeader;
+  font-weight: 300;
+  em {
+    font-weight: 300;
+    font-style: normal;
+    color: $fontColEm;
+  }
+}

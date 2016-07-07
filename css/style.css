@@ -182,6 +182,7 @@ body {
 
 header {
   background: url("../img/main.jpg") no-repeat center top;
+  background-attachment: fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -195,7 +196,11 @@ header {
   @media (min-width: 1024px) {
     header {
       height: 80vh;
-      padding: 0 35vh; } }
+      padding: 0 35vh;
+      justify-content: space-between; } }
+  @media (min-width: 1200px) {
+    header {
+      padding: 0 40vh; } }
   header i {
     font-style: normal;
     margin-bottom: 10px; }
@@ -211,6 +216,11 @@ header {
     @media (min-width: 535px) {
       header .images {
         align-items: flex-end; } }
+    @media (min-width: 1024px) {
+      header .images {
+        font-size: 4vh;
+        height: 30vh;
+        margin-bottom: -50px; } }
     header .images .img {
       background-image: url("../img/hex.png");
       background-size: cover;
@@ -230,12 +240,16 @@ header {
           align-self: flex-start; }
         header .images .img:nth-of-type(4) {
           align-self: flex-start; } }
+      @media (min-width: 1024px) {
+        header .images .img {
+          width: 13vh;
+          height: 14vh; } }
   header h1 {
     color: white;
-    font-family: "Ubuntu", sans-serif;
     font-size: 10vh;
-    margin-top: 50px;
-    font-weight: 300; }
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    margin-top: 50px; }
     header h1 em {
       font-weight: 300;
       font-style: normal;
@@ -253,5 +267,44 @@ header {
     font-weight: 300;
     font-size: 2vh;
     line-height: 1.5; }
+  header .scroll {
+    display: none; }
+    @media (min-width: 1024px) {
+      header .scroll {
+        background-image: url("../img/arrow-down.png");
+        display: block;
+        width: 50px;
+        height: 55px;
+        margin-bottom: 15px;
+        background-size: cover; } }
+
+nav {
+  display: none; }
+  @media (min-width: 1024px) {
+    nav {
+      display: flex;
+      background-color: white;
+      height: 13vh;
+      justify-content: space-around;
+      align-items: center; } }
+  nav h2 {
+    color: white;
+    font-size: 3vh;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    color: #333; }
+    nav h2 em {
+      font-weight: 300;
+      font-style: normal;
+      color: #cc00aa; }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 35%; }
+  nav li {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.8vh;
+    font-family: "Ubuntu", sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
