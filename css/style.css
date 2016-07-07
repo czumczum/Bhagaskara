@@ -189,6 +189,13 @@ header {
   justify-content: space-around;
   width: 100%;
   height: 100vh; }
+  @media (min-width: 700px) {
+    header {
+      padding: 0 10%; } }
+  @media (min-width: 1024px) {
+    header {
+      height: 80vh;
+      padding: 0 35vh; } }
   header i {
     font-style: normal;
     margin-bottom: 10px; }
@@ -201,6 +208,9 @@ header {
     justify-content: space-around;
     font-family: "Flaticon";
     font-size: 5vh; }
+    @media (min-width: 535px) {
+      header .images {
+        align-items: flex-end; } }
     header .images .img {
       background-image: url("../img/hex.png");
       background-size: cover;
@@ -215,6 +225,11 @@ header {
         background-image: url("../img/hex-hover.png"); }
       header .images .img p {
         font-family: "Roboto", sans-serif; }
+      @media (min-width: 535px) {
+        header .images .img:nth-of-type(3) {
+          align-self: flex-start; }
+        header .images .img:nth-of-type(4) {
+          align-self: flex-start; } }
   header h1 {
     color: white;
     font-family: "Ubuntu", sans-serif;
