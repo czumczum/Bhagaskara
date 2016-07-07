@@ -1,0 +1,64 @@
+section {
+  background-color: $bgCol;
+  display: flex;
+  padding-top: 10px;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  height: 100vh;
+  div {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    i {
+      font-family: $iconFont;
+      font-style: normal;
+      font-size: 6vh;
+      color: $fontColDis;
+    }
+    .img {
+      background-image: url("../img/hex-grey.png");
+    }
+    .img:hover {
+      color: $fontColEm;
+      background-image: url("../img/hex-hover2.png");
+      & i {
+        color: $fontColEm;
+      }
+    }
+    @media (min-width: $seconDim) { //wyświetlanie divów z obrazami na większych
+      width: 25%;
+      height: 35vh;
+      justify-content: flex-start;
+    }
+  }
+  @media (min-width: $seconDim) { //wyświetlanie sekcji na większych ekranach
+    height: 70vh;
+    align-items: center;
+    padding: 0 10%;
+  }
+  @media (min-width: $thirDim) { //wyświetlanie sekcji na większych ekranach
+    height: 50vh;
+    padding: 0 20%;
+  }
+  h2 {
+    @include styleHeader(3vh);
+    color: $fontColtxt;
+    margin: 10px 0;
+    @media (min-width: $seconDim) {
+      font-size: 2vh;
+    }
+  }
+  p {
+    font-family: $fontText;
+    text-align: center;
+    color: #333;
+    font-size: 1.9vh;
+    padding: 0 10px 10px 10px;
+    @media (min-width: $seconDim) {
+      font-size: 1.6vh;
+    }
+  }
+}

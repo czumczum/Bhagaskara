@@ -1,0 +1,79 @@
+header {
+  background: url("../img/main.jpg") no-repeat center top;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+  @media (min-width: $seconDim) {
+    padding: 0 10%;
+  }
+  @media (min-width: $thirDim) {
+    height: 80vh;
+    padding: 0 35vh;
+    justify-content: space-between;
+  }
+  @media (min-width: $forthDim) {
+    padding: 0 40vh;
+  }
+
+  i {
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+  .images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 35vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: $iconFont;
+    font-size: 5vh;
+    .img:hover {
+      background-image: url("../img/hex-hover.png");
+    }
+    @media (min-width: $firstDim) {
+      align-items: flex-end;
+    }
+    @media (min-width: $thirDim) {
+      font-size: 4vh;
+      height: 30vh;
+      margin-bottom: -50px;
+    }
+  }
+  h1 {
+    @include styleHeader(10vh);
+    margin-top: 50px;
+  }
+  h2 {
+    font-family: $fontHeader;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 4vh;
+  }
+  p {
+    color: white;
+    text-align: center;
+    font-family: $fontHeader;
+    font-weight: 300;
+    font-size: 2vh;
+    line-height: 1.5;
+  }
+
+  .scroll {
+    display: none;
+    @media (min-width: $thirDim) {
+      background-image: url("../img/arrow-down.png");
+      display: block;
+      width: 50px;
+      height: 55px;
+      margin-bottom: 15px;
+      background-size: cover;
+    }
+  }
+}
