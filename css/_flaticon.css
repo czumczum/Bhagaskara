@@ -1,0 +1,224 @@
+/*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:00
+    */
+@font-face {
+  font-family: "Flaticon";
+  src: url("font/Flaticon.eot");
+  src: url("font/Flaticon.eot?#iefix") format("embedded-opentype"), url("font/Flaticon.woff") format("woff"), url("font/Flaticon.ttf") format("truetype"), url("font/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("font/Flaticon.svg#Flaticon") format("svg"); } }
+
+/* line 24, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+/* line 39, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-banknote:before {
+  content: "\f100"; }
+
+/* line 40, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-big-megaphone:before {
+  content: "\f101"; }
+
+/* line 41, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-big-star:before {
+  content: "\f102"; }
+
+/* line 42, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-camera-video:before {
+  content: "\f103"; }
+
+/* line 43, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-chemistry:before {
+  content: "\f104"; }
+
+/* line 44, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-coffee:before {
+  content: "\f105"; }
+
+/* line 45, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-daily-newspaper:before {
+  content: "\f106"; }
+
+/* line 46, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-database:before {
+  content: "\f107"; }
+
+/* line 47, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-diamond:before {
+  content: "\f108"; }
+
+/* line 48, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-digital-photo:before {
+  content: "\f109"; }
+
+/* line 49, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-dustbin:before {
+  content: "\f10a"; }
+
+/* line 50, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-envelope:before {
+  content: "\f10b"; }
+
+/* line 51, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-eye:before {
+  content: "\f10c"; }
+
+/* line 52, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-flame:before {
+  content: "\f10d"; }
+
+/* line 53, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-graduation-cap:before {
+  content: "\f10e"; }
+
+/* line 54, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-groceries-store:before {
+  content: "\f10f"; }
+
+/* line 55, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-heart-shape:before {
+  content: "\f110"; }
+
+/* line 56, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-inbox:before {
+  content: "\f111"; }
+
+/* line 57, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-like:before {
+  content: "\f112"; }
+
+/* line 58, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-location-gps:before {
+  content: "\f113"; }
+
+/* line 59, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-locked-padlock:before {
+  content: "\f114"; }
+
+/* line 60, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-newspaper:before {
+  content: "\f115"; }
+
+/* line 61, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-noodle-bowl:before {
+  content: "\f116"; }
+
+/* line 62, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-paper-plane:before {
+  content: "\f117"; }
+
+/* line 63, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-paperclip-archive:before {
+  content: "\f118"; }
+
+/* line 64, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-parameters:before {
+  content: "\f119"; }
+
+/* line 65, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-pencil-with-rubber:before {
+  content: "\f11a"; }
+
+/* line 66, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-quaver:before {
+  content: "\f11b"; }
+
+/* line 67, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-reflex-camera:before {
+  content: "\f11c"; }
+
+/* line 68, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-screen-outline:before {
+  content: "\f11d"; }
+
+/* line 69, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-setting-tool:before {
+  content: "\f11e"; }
+
+/* line 70, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-small-calendar:before {
+  content: "\f11f"; }
+
+/* line 71, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-small-cloud:before {
+  content: "\f120"; }
+
+/* line 72, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-small-key:before {
+  content: "\f121"; }
+
+/* line 73, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-small-light-bulb:before {
+  content: "\f122"; }
+
+/* line 74, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-small-truck:before {
+  content: "\f123"; }
+
+/* line 75, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-smartphone-outline:before {
+  content: "\f124"; }
+
+/* line 76, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-sound-on:before {
+  content: "\f125"; }
+
+/* line 77, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-speech-bubble:before {
+  content: "\f126"; }
+
+/* line 78, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-tag:before {
+  content: "\f127"; }
+
+/* line 79, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-television-outline:before {
+  content: "\f128"; }
+
+/* line 80, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-the-world:before {
+  content: "\f129"; }
+
+/* line 81, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-user-avatar:before {
+  content: "\f12a"; }
+
+/* line 82, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-vynil:before {
+  content: "\f12b"; }
+
+/* line 83, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-wallet-with-zipper:before {
+  content: "\f12c"; }
+
+/* line 84, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-white-t-shirt:before {
+  content: "\f12d"; }
+
+/* line 85, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-wristwatch:before {
+  content: "\f12e"; }
+
+/* line 86, C:/Users/urszulka/Documents/GitHub/Bhagaskara/css/_flaticon.scss */
+.flaticon-zoom-tool:before {
+  content: "\f12f"; }
+
+/*# sourceMappingURL=_flaticon.css.map */

@@ -51,7 +51,7 @@ nav {
 	}
 	h2 {
 		@include styleHeader(3vh);
-		color: $fontColtxt;
+		color: $fontColTxt;
 	}
 	ul {
 		display: flex;

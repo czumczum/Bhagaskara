@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
   }
   @media (min-width: $forthDim) {
-    padding: 0 40vh;
+    padding: 0px 25vh;
   }
 
   i {
@@ -35,6 +35,9 @@ header {
     font-size: 5vh;
     .img:hover {
       background-image: url("../img/hex-hover.png");
+      transform: scale(.9);
+      transition: 0.3s;
+
     }
     @media (min-width: $firstDim) {
       align-items: flex-end;

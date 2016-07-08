@@ -45,7 +45,7 @@ section {
   }
   h2 {
     @include styleHeader(3vh);
-    color: $fontColtxt;
+    color: $fontColTxt;
     margin: 10px 0;
     @media (min-width: $seconDim) {
       font-size: 2vh;

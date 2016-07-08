@@ -180,7 +180,7 @@ header {
   justify-content: space-around;
   width: 100%;
   height: 100vh; }
-  @media (min-width: 700px) {
+  @media (min-width: 680px) {
     header {
       padding: 0 10%; } }
   @media (min-width: 1024px) {
@@ -190,7 +190,7 @@ header {
       justify-content: space-between; } }
   @media (min-width: 1200px) {
     header {
-      padding: 0 40vh; } }
+      padding: 0px 25vh; } }
   header i {
     font-style: normal;
     margin-bottom: 10px; }
@@ -204,7 +204,9 @@ header {
     font-family: "Flaticon";
     font-size: 5vh; }
     header .images .img:hover {
-      background-image: url("../img/hex-hover.png"); }
+      background-image: url("../img/hex-hover.png");
+      transform: scale(0.9);
+      transition: 0.3s; }
     @media (min-width: 535px) {
       header .images {
         align-items: flex-end; } }
@@ -273,12 +275,12 @@ section {
       background-image: url("../img/hex-hover2.png"); }
       section div .img:hover i {
         color: #9f449b; }
-    @media (min-width: 700px) {
+    @media (min-width: 680px) {
       section div {
         width: 25%;
         height: 35vh;
         justify-content: flex-start; } }
-  @media (min-width: 700px) {
+  @media (min-width: 680px) {
     section {
       height: 70vh;
       align-items: center;
@@ -292,13 +294,13 @@ section {
     font-size: 3vh;
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
-    color: #333;
+    color: #666;
     margin: 10px 0; }
     section h2 em {
       font-weight: 300;
       font-style: normal;
       color: #9f449b; }
-    @media (min-width: 700px) {
+    @media (min-width: 680px) {
       section h2 {
         font-size: 2vh; } }
   section p {
@@ -307,7 +309,7 @@ section {
     color: #333;
     font-size: 1.9vh;
     padding: 0 10px 10px 10px; }
-    @media (min-width: 700px) {
+    @media (min-width: 680px) {
       section p {
         font-size: 1.6vh; } }
 
@@ -325,7 +327,7 @@ section {
     font-size: 5vh;
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
-    color: #333;
+    color: #666;
     background-color: white;
     z-index: 1;
     position: relative; }
@@ -337,36 +339,85 @@ section {
       content: '';
       width: 20px;
       height: 20px;
-      border-top: 1px solid #ccd0d2;
-      border-left: 1px solid #ccd0d2;
+      border-bottom: 1px solid #9f449b;
+      border-left: 1px solid #9f449b;
       position: absolute;
       left: -15px;
-      top: -5px;
+      bottom: -5px;
       z-index: -1; }
     .about h1:after {
       content: '';
       width: 20px;
       height: 20px;
-      border-bottom: 1px solid #ccd0d2;
-      border-right: 1px solid #ccd0d2;
+      border-top: 1px solid #9f449b;
+      border-right: 1px solid #9f449b;
       position: absolute;
       right: -15px;
-      bottom: -5px;
+      top: -5px;
       z-index: -1; }
   .about div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between; }
+    @media (min-width: 680px) {
+      .about div {
+        flex-direction: row;
+        width: 70vw;
+        align-items: flex-end;
+        justify-content: center; } }
   .about p {
-    text-align: center;
     padding-top: 20px;
     font-family: "Roboto", sans-serif;
+    color: #666;
     font-size: 2.2vh;
     width: 80vw;
-    max-width: 600px; }
+    line-height: 2;
+    max-width: 400px;
+    text-align: justify;
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 680px) {
+      .about p {
+        font-size: 1.9vh;
+        align-items: flex-start;
+        margin-left: 20px;
+        justify-content: space-around;
+        height: 45vh; } }
+    .about p a {
+      display: block;
+      color: white;
+      font-weight: 300;
+      padding: 15px 0;
+      width: 50vw;
+      max-width: 150px;
+      border-radius: 3px;
+      box-shadow: 0 1px 1px 1px black;
+      margin: 10px 0 0 0;
+      background-color: #9f449b;
+      text-align: center; }
+      .about p a:hover {
+        transition: background-color 0.5s ease;
+        background-color: #ccd0d2; }
   .about img {
-    max-width: 80vw; }
+    width: 80vw; }
+    @media (min-width: 535px) {
+      .about img {
+        max-width: 60vw; } }
+  @media (min-width: 535px) and (orientation: landscape) {
+    .about img {
+      max-width: 50vw; } }
+
+    @media (min-width: 680px) {
+      .about img {
+        max-width: 45vw; } }
+    @media (min-width: 680px) {
+      .about img {
+        max-width: 40vw; } }
+    @media (min-width: 1200px) {
+      .about img {
+        width: 30vw; } }
 
 body {
   background-color: black; }
@@ -414,7 +465,7 @@ nav {
     font-size: 3vh;
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
-    color: #333; }
+    color: #666; }
     nav h2 em {
       font-weight: 300;
       font-style: normal;
