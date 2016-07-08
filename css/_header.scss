@@ -33,11 +33,12 @@ header {
     justify-content: space-around;
     font-family: $iconFont;
     font-size: 5vh;
-    .img:hover {
-      background-image: url("../img/hex-hover.png");
-      transform: scale(.9);
-      transition: 0.3s;
-
+    .img {
+      transition: 0.8s;
+      &:hover {
+        background-image: url("../img/hex-hover.png");
+        transform: scale(.9);
+      }
     }
     @media (min-width: $firstDim) {
       align-items: flex-end;

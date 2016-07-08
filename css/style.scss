@@ -1,7 +1,7 @@
 @import "variables";
 @import "flaticon";
 @import "header";
-@import "section";
+@import "features";
 @import "about";
 @import "quote";
 @import "team";
@@ -26,6 +26,10 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	i {
+		font-family: $iconFont;
+		font-style: normal;
+	}
 	p {
 		font-family: $fontText;
 	}

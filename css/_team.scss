@@ -1,0 +1,94 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 700px;
+  div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $firstDim) {
+      flex-direction: row;
+    }
+  }
+    .name {
+      padding-left: 10px;
+      width: 20vh;
+      h3 {
+        @include styleHeader(3vh);
+        font-family: $fontText;
+        text-transform: uppercase;
+        color: $fontColTxt;
+        text-align: left;
+        font-weight: 500;
+        @media (min-width: $firstDim) {
+          text-align: center;
+          margin-top: 10px;
+        }
+        @media (min-width: $thirDim) {
+          font-size: 2vh;
+        }
+      }
+      h4 {
+        @include styleHeader(2vh);
+        font-family: $fontText;
+        color: $fontColTxt;
+        text-align: left;
+        @media (min-width: $firstDim) {
+          text-align: center;
+        }
+        @media (min-width: $thirDim) {
+          font-size: 1.7vh;
+          margin-top: 10px;
+        }
+      }
+      @media (min-width: $firstDim) {
+        flex-direction: column;
+      }
+    }
+
+  img {
+    width: 15vw;
+    @media (min-width: $seconDim) {
+      width: 10vh;
+    }
+  }
+  .members {
+    max-width: 600px;
+    @media (min-width: $firstDim) {
+      width: 100vw;
+      justify-content: space-around;
+    }
+  }
+  .member {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-bottom: 20px;
+    img {
+      width: 10vw;
+      max-width: 50px;
+      max-height: 50px;
+    }
+    @media (min-width: $firstDim) {
+      flex-direction: column;
+    }
+  }
+  p {
+    width: 15vw;
+    @media (min-width: $firstDim) {
+      display: flex;
+      flex-direction: row;
+      max-height: 50px;
+      justify-content: center;
+      margin-left: 0;
+    }
+  }
+}
+.round {
+  width: 20vh;
+  height: 20vh;
+  background-color: $fontColTxt;
+  border-radius: 50%;
+}

@@ -203,10 +203,11 @@ header {
     justify-content: space-around;
     font-family: "Flaticon";
     font-size: 5vh; }
-    header .images .img:hover {
-      background-image: url("../img/hex-hover.png");
-      transform: scale(0.9);
-      transition: 0.3s; }
+    header .images .img {
+      transition: 0.8s; }
+      header .images .img:hover {
+        background-image: url("../img/hex-hover.png");
+        transform: scale(0.9); }
     @media (min-width: 535px) {
       header .images {
         align-items: flex-end; } }
@@ -267,9 +268,12 @@ section {
       font-family: "Flaticon";
       font-style: normal;
       font-size: 6vh;
-      color: #ccd0d2; }
+      color: #ccd0d2;
+      transition: 0.8s; }
     section div .img {
-      background-image: url("../img/hex-grey.png"); }
+      background-image: url("../img/hex-grey.png");
+      background-repeat: no-repeat;
+      transition: 0.8s; }
     section div .img:hover {
       color: #9f449b;
       background-image: url("../img/hex-hover2.png"); }
@@ -313,7 +317,7 @@ section {
       section p {
         font-size: 1.6vh; } }
 
-.about {
+main {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -322,7 +326,7 @@ section {
   height: 100vh;
   width: 100%;
   max-width: 1200px; }
-  .about h1 {
+  main h1 {
     color: white;
     font-size: 5vh;
     font-family: "Ubuntu", sans-serif;
@@ -331,11 +335,11 @@ section {
     background-color: white;
     z-index: 1;
     position: relative; }
-    .about h1 em {
+    main h1 em {
       font-weight: 300;
       font-style: normal;
       color: #9f449b; }
-    .about h1:before {
+    main h1:before {
       content: '';
       width: 20px;
       height: 20px;
@@ -345,7 +349,7 @@ section {
       left: -15px;
       bottom: -5px;
       z-index: -1; }
-    .about h1:after {
+    main h1:after {
       content: '';
       width: 20px;
       height: 20px;
@@ -356,20 +360,20 @@ section {
       top: -5px;
       z-index: -1; }
     @media (min-width: 1200px) {
-      .about h1 {
+      main h1 {
         margin-bottom: -50px; } }
-  .about div {
+  main div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between; }
     @media (min-width: 680px) {
-      .about div {
+      main div {
         flex-direction: row;
         width: 70vw;
         align-items: flex-end;
         justify-content: center; } }
-  .about p {
+  main p {
     padding-top: 20px;
     font-family: "Roboto", sans-serif;
     color: #666;
@@ -382,44 +386,44 @@ section {
     display: flex;
     flex-direction: column; }
     @media (min-width: 680px) {
-      .about p {
+      main p {
         font-size: 1.9vh;
         align-items: flex-start;
         margin-left: 20px;
         justify-content: space-around;
         height: 45vh; } }
-    .about p a {
+    main p a {
       display: block;
       color: white;
       font-weight: 300;
-      padding: 15px 0;
+      padding: 10px 0 15px 0;
       width: 50vw;
       max-width: 150px;
       border-radius: 3px;
       box-shadow: 0 1px 1px 1px black;
       margin: 10px 0 0 0;
       background-color: #9f449b;
-      text-align: center; }
-      .about p a:hover {
-        transition: background-color 0.5s ease;
+      text-align: center;
+      transition: background-color 0.5s ease; }
+      main p a:hover {
         background-color: #ccd0d2; }
-  .about img {
+  main img {
     width: 80vw; }
     @media (min-width: 535px) {
-      .about img {
+      main img {
         max-width: 60vw; } }
   @media (min-width: 535px) and (orientation: landscape) {
-    .about img {
+    main img {
       max-width: 50vw; } }
 
     @media (min-width: 680px) {
-      .about img {
+      main img {
         max-width: 45vw; } }
     @media (min-width: 680px) {
-      .about img {
+      main img {
         max-width: 40vw; } }
     @media (min-width: 1200px) {
-      .about img {
+      main img {
         width: 30vw; } }
 
 .quote {
@@ -433,8 +437,6 @@ section {
   align-items: center;
   justify-content: center; }
   .quote div i {
-    font-family: "Flaticon";
-    font-style: normal;
     font-size: 6vh; }
   .quote h1 {
     color: white;
@@ -457,6 +459,104 @@ section {
     .quote {
       height: 45vh; } }
 
+.team {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 700px; }
+  .team div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 535px) {
+      .team div {
+        flex-direction: row; } }
+  .team .name {
+    padding-left: 10px;
+    width: 20vh; }
+    .team .name h3 {
+      color: white;
+      font-size: 3vh;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      color: #666;
+      text-align: left;
+      font-weight: 500; }
+      .team .name h3 em {
+        font-weight: 300;
+        font-style: normal;
+        color: #9f449b; }
+      @media (min-width: 535px) {
+        .team .name h3 {
+          text-align: center;
+          margin-top: 10px; } }
+      @media (min-width: 1024px) {
+        .team .name h3 {
+          font-size: 2vh; } }
+    .team .name h4 {
+      color: white;
+      font-size: 2vh;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
+      font-family: "Roboto", sans-serif;
+      color: #666;
+      text-align: left; }
+      .team .name h4 em {
+        font-weight: 300;
+        font-style: normal;
+        color: #9f449b; }
+      @media (min-width: 535px) {
+        .team .name h4 {
+          text-align: center; } }
+      @media (min-width: 1024px) {
+        .team .name h4 {
+          font-size: 1.7vh;
+          margin-top: 10px; } }
+    @media (min-width: 535px) {
+      .team .name {
+        flex-direction: column; } }
+  .team img {
+    width: 15vw; }
+    @media (min-width: 680px) {
+      .team img {
+        width: 10vh; } }
+  .team .members {
+    max-width: 600px; }
+    @media (min-width: 535px) {
+      .team .members {
+        width: 100vw;
+        justify-content: space-around; } }
+  .team .member {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-bottom: 20px; }
+    .team .member img {
+      width: 10vw;
+      max-width: 50px;
+      max-height: 50px; }
+    @media (min-width: 535px) {
+      .team .member {
+        flex-direction: column; } }
+  .team p {
+    width: 15vw; }
+    @media (min-width: 535px) {
+      .team p {
+        display: flex;
+        flex-direction: row;
+        max-height: 50px;
+        justify-content: center;
+        margin-left: 0; } }
+
+.round {
+  width: 20vh;
+  height: 20vh;
+  background-color: #666;
+  border-radius: 50%; }
+
 body {
   background-color: black; }
 
@@ -477,6 +577,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  .img i {
+    font-family: "Flaticon";
+    font-style: normal; }
   .img p {
     font-family: "Roboto", sans-serif; }
   @media (min-width: 535px) {

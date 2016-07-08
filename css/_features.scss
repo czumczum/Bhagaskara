@@ -17,9 +17,12 @@ section {
       font-style: normal;
       font-size: 6vh;
       color: $fontColDis;
+      transition: 0.8s;
     }
     .img {
       background-image: url("../img/hex-grey.png");
+      background-repeat: no-repeat;
+      transition: 0.8s;
     }
     .img:hover {
       color: $fontColEm;
