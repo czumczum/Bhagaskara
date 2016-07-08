@@ -1,3 +1,57 @@
 .about {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 80vh;
+  width: 100%;
+  max-width: 1200px;
+  h1 {
+    @include styleHeader(5vh);
+    color: $fontColtxt;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    &:before {
+       content: '';
+       width: 20px;
+       height: 20px;
+       border-top: 1px solid $fontColDis;
+       border-left: 1px solid $fontColDis;
+       position: absolute;
+      left: -15px;
+      top: -5px;
+      z-index: -1;
+     }
+    &:after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border-bottom: 1px solid $fontColDis;
+      border-right: 1px solid $fontColDis;
+      position: absolute;
+      right: -15px;
+      bottom: -5px;
+      z-index: -1;
+    }
+
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  p {
+    text-align: center;
+    padding-top: 20px;
+    font-family: $fontText;
+    font-size: 2.2vh;
+    width: 80vw;
+    max-width: 600px;
+  }
+  img {
+    max-width: 80vw;
+  }
 }

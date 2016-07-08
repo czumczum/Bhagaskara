@@ -312,7 +312,61 @@ section {
         font-size: 1.6vh; } }
 
 .about {
-  background-color: white; }
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 80vh;
+  width: 100%;
+  max-width: 1200px; }
+  .about h1 {
+    color: white;
+    font-size: 5vh;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    color: #333;
+    background-color: white;
+    z-index: 1;
+    position: relative; }
+    .about h1 em {
+      font-weight: 300;
+      font-style: normal;
+      color: #9f449b; }
+    .about h1:before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border-top: 1px solid #ccd0d2;
+      border-left: 1px solid #ccd0d2;
+      position: absolute;
+      left: -15px;
+      top: -5px;
+      z-index: -1; }
+    .about h1:after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border-bottom: 1px solid #ccd0d2;
+      border-right: 1px solid #ccd0d2;
+      position: absolute;
+      right: -15px;
+      bottom: -5px;
+      z-index: -1; }
+  .about div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+  .about p {
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.2vh;
+    width: 80vw;
+    max-width: 600px; }
+  .about img {
+    max-width: 80vw; }
 
 body {
   background-color: black; }
