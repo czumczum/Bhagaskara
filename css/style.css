@@ -348,7 +348,9 @@ main {
       position: absolute;
       left: -15px;
       bottom: -5px;
-      z-index: -1; }
+      z-index: -1;
+      transition: 1s;
+      animation-timing-function: ease; }
     main h1:after {
       content: '';
       width: 20px;
@@ -358,7 +360,13 @@ main {
       position: absolute;
       right: -15px;
       top: -5px;
-      z-index: -1; }
+      z-index: -1;
+      transition: 0.5s;
+      animation-timing-function: ease; }
+    main h1:hover:after {
+      transform: scale(1.3); }
+    main h1:hover:before {
+      transform: scale(1.3); }
     @media (min-width: 1200px) {
       main h1 {
         margin-bottom: -50px; } }
@@ -557,6 +565,185 @@ main {
   background-color: #666;
   border-radius: 50%; }
 
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.skills {
+  height: 100vh; }
+  .skills > div {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: flex-end;
+    height: 5vh; }
+
+/* ******************************************************
+    Animated Skills Bar
+*********************************************************/
+#codeconSkills {
+  font-size: 20px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  width: 80%;
+  display: flex; }
+
+#codeconSkills img {
+  width: 20%;
+  height: 10%;
+  margin: auto 35%;
+  padding: 10px; }
+
+.codeconSkillbar {
+  width: 90%;
+  height: 50px;
+  position: relative;
+  background: rgba(17, 17, 17, 0.3);
+  margin: 20px auto; }
+
+#codeconHTML {
+  width: 100%;
+  animation: Animate-HTML 4s;
+  -webkit-animation: Animate-HTML 4s;
+  -moz-animation: Animate-HTML 4s;
+  -o-animation: Animate-HTML 4s;
+  height: 50px;
+  position: absolute;
+  background-color: #ea8564; }
+
+@keyframes Animate-HTML {
+  from {
+    width: 10px; }
+  to {
+    width: 100%; } }
+@-webkit-keyframes Animate-HTML {
+  from {
+    width: 10px; }
+  to {
+    width: 100%; } }
+@-moz-keyframes Animate-HTML {
+  from {
+    width: 10px; }
+  to {
+    width: 100%; } }
+@-o-keyframes Animate-HTML {
+  from {
+    width: 10px; }
+  to {
+    width: 100%; } }
+#codeconCSS {
+  animation: Animate-CSS 5s;
+  -webkit-animation: Animate-CSS 5s;
+  -moz-animation: Animate-CSS 5s;
+  -o-animation: Animate-CSS 5s;
+  width: 70%;
+  height: 50px;
+  position: absolute;
+  background-color: #55a69f; }
+
+@keyframes Animate-CSS {
+  from {
+    width: 10px; }
+  to {
+    width: 70%; } }
+@-webkit-keyframes Animate-CSS {
+  from {
+    width: 10px; }
+  to {
+    width: 70%; } }
+@-moz-keyframes Animate-CSS {
+  from {
+    width: 10px; }
+  to {
+    width: 70%; } }
+@-o-keyframes Animate-CSS {
+  from {
+    width: 10px; }
+  to {
+    width: 70%; } }
+#codeconjQuery {
+  animation: Animate-jQuery 5s;
+  -webkit-animation: Animate-jQuery 5s;
+  -moz-animation: Animate-jQuery 5s;
+  -o-animation: Animate-jQuery 5s;
+  width: 40%;
+  height: 50px;
+  position: absolute;
+  background-color: #99856d; }
+
+@keyframes Animate-jQuery {
+  from {
+    width: 10px; }
+  to {
+    width: 40%; } }
+@-webkit-keyframes Animate-jQuery {
+  from {
+    width: 10px; }
+  to {
+    width: 40%; } }
+@-moz-keyframes Animate-jQuery {
+  from {
+    width: 10px; }
+  to {
+    width: 40%; } }
+@-o-keyframes Animate-jQuery {
+  from {
+    width: 10px; }
+  to {
+    width: 40%; } }
+#codeconJS {
+  animation: Animate-JS 4s;
+  -webkit-animation: Animate-JS 4s;
+  -moz-animation: Animate-JS 4s;
+  -o-animation: Animate-JS 4s;
+  width: 65%;
+  height: 50px;
+  position: absolute;
+  background-color: #c44e45; }
+
+@keyframes Animate-JS {
+  from {
+    width: 10px; }
+  to {
+    width: 65%; } }
+@-webkit-keyframes Animate-JS {
+  from {
+    width: 10px; }
+  to {
+    width: 65%; } }
+@-moz-keyframes Animate-JS {
+  from {
+    width: 10px; }
+  to {
+    width: 65%; } }
+@-o-keyframes Animate-JS {
+  from {
+    width: 10px; }
+  to {
+    width: 65%; } }
+.codeconSkillArea {
+  z-index: 1;
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-shadow: none;
+  color: #fff;
+  font-size: 18px; }
+
+.PercentText {
+  z-index: 3;
+  position: relative;
+  padding-right: 15px;
+  margin-top: 15px;
+  float: right;
+  text-shadow: none;
+  color: #fff;
+  font-size: 18px; }
+
 body {
   background-color: black; }
 
@@ -570,6 +757,7 @@ body {
 .img {
   background-image: url("../img/hex.png");
   background-size: cover;
+  background-repeat: no-repeat;
   width: 15vh;
   height: 16vh;
   color: white;

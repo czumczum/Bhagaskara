@@ -5,6 +5,7 @@
 @import "about";
 @import "quote";
 @import "team";
+@import "skills";
 
 body {
 	background-color: black;
@@ -19,6 +20,7 @@ body {
 .img {
 	background-image: url("../img/hex.png");
 	background-size: cover;
+	background-repeat: no-repeat;
 	width: 15vh;
 	height: 16vh;
 	color: white;

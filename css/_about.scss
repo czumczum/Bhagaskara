@@ -25,7 +25,9 @@ main {
       left: -15px;
       bottom: -5px;
       z-index: -1;
-     }
+      transition: 1s;
+      animation-timing-function: ease;
+    }
     &:after {
       content: '';
       width: 20px;
@@ -36,6 +38,16 @@ main {
       right: -15px;
       top: -5px;
       z-index: -1;
+      transition: 0.5s;
+      animation-timing-function: ease;
+    }
+    &:hover {
+      &:after {
+        transform: scale(1.3);
+      }
+      &:before {
+        transform: scale(1.3);
+      }
     }
     @media (min-width: $forthDim) {
       margin-bottom: -50px;
