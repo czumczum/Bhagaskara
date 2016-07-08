@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   max-width: 1200px;
   h1 {
@@ -37,7 +37,9 @@
       top: -5px;
       z-index: -1;
     }
-
+    @media (min-width: $forthDim) {
+      margin-bottom: -50px;
+    }
   }
   div {
     display: flex;
@@ -87,10 +89,9 @@
         transition: background-color 0.5s ease;
         background-color: $fontColDis;
       }
-      @media (min-width: $seconDim) {
       }
     }
-  }
+
   img {
     width: 80vw;
     @media (min-width: $firstDim) {
