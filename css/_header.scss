@@ -78,6 +78,10 @@ header {
       height: 55px;
       margin-bottom: 15px;
       background-size: cover;
+      transition: 0.8s;
     }
+  &:hover {
+    transform: scale(.9);
+  }
   }
 }

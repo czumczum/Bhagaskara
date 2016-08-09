@@ -7,6 +7,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,300|Exo+2:400,400italic,600,700,800|Roboto:400,300,500,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.0/csshake-vertical.min.css">
 </head>
 	<body>
 		<div class="body">
@@ -54,7 +55,7 @@
 					<li data-id="contact">Contact</li>
 				</ul>
 			</nav>
-			<section>
+			<section class="pre-about">
 				<div>
 					<div class="img">
 						<i class="flaticon-heart-shape"></i>
@@ -149,41 +150,40 @@
 			<section class="skills">
 				<h1>Our <em>skills</em></h1>
 				<div class="skillset">
-					<div data-skill="webdesign" class="skill">
+					<div class="skill">
 						<div class="skill-text">
 						<h3>Web design</h3>
-						<span>90%</span>
+						<span id="webdesign">90%</span>
 						</div>
 						<div class="skillBar">
-							<div class="skillFilling" id="webdesign"></div>
+							<div class="skillFilling" data-skill="webdesign"></div>
 						</div>
 					</div>
-					<div data-skill="graphic" class="skill">
+					<div class="skill">
 						<div class="skill-text">
 						<h3>Graphic design</h3>
-						<span>70%</span>
+						<span id="graphic">70%</span>
 						</div>
 						<div class="skillBar">
-							<div class="skillFilling" id="graphic"></div>
+							<div class="skillFilling" data-skill="graphic"></div>
 						</div>
 					</div>
-
-					<div data-skill="html" class="skill">
+					<div class="skill">
 						<div class="skill-text">
 						<h3>html/css</h3>
-						<span>75%</span>
+						<span id="html">75%</span>
 						</div>
 						<div class="skillBar">
-							<div class="skillFilling" id="html"></div>
+							<div class="skillFilling" data-skill="html"></div>
 						</div>
 					</div>
-					<div data-skill="uiux" class="skill">
+					<div class="skill">
 						<div class="skill-text">
 						<h3>ui/ux</h3>
-						<span>85%</span>
+						<span id="uiux">85%</span>
 						</div>
 						<div class="skillBar">
-							<div class="skillFilling" id="uiux"></div>
+							<div class="skillFilling" data-skill="uiux"></div>
 						</div>
 					</div>
 				</div>
