@@ -769,7 +769,12 @@ nav {
       background-color: white;
       height: 13vh;
       justify-content: space-around;
-      align-items: center; } }
+      align-items: center; }
+      nav.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        max-width: 1200px; } }
   nav h2 {
     color: white;
     font-size: 3vh;

@@ -58,6 +58,12 @@ nav {
 		height: 13vh;
 		justify-content: space-around;
 		align-items: center;
+      &.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        max-width: 1200px;
+      }
 	}
 	h2 {
 		@include styleHeader(3vh);
