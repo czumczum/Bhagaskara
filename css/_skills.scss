@@ -52,18 +52,36 @@
       margin-bottom: -50px;
     }
   }
+  @media (min-width: $firstDim) {
+    height:70vh;
+  }
 }
+
 .skillset {
   display: flex;
-  width: 100%;
+  width: 100vw;
   flex-direction: row;
   height: 80%;
   flex-wrap: wrap;
+  @media (min-width: $firstDim) {
+   justify-content: space-around;
+    height: 50%;
+  }
+  @media (min-width: $seconDim) {
+    width: 90vw;
+    max-width: 700px;
+  }
 }
 .skill {
   width: 90vw;
   p {
     display: flex;
+  }
+  @media (min-width: $firstDim) {
+    width: 40vw;
+    height: 10vh;
+    max-height: 50px;
+    max-width: 250px;
   }
 }
 .skill-text {
@@ -81,6 +99,10 @@
     font-family: $fontHeader;
     color: $fontColTxt;
   }
+  @media (min-width: $firstDim) {
+    width: 40vw;
+    max-width: 250px;
+  }
 }
 .skillBar {
   height: 2vh;
@@ -88,6 +110,10 @@
   width: 80vw;
   background-color: $fontColDis;
   display: block;
+  @media (min-width: $firstDim) {
+    width: 40vw;
+    max-width: 250px;
+  }
 }
 .skillFilling {
   height: 100%;
