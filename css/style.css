@@ -682,7 +682,7 @@ main {
 
 .statistics {
   width: 100vw;
-  margin: -1vh 0 0 0;
+  margin: -1vh 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -699,6 +699,31 @@ main {
     .statistics p span:last-child {
       color: #666;
       font-size: 1.1em; }
+
+.testimony {
+  flex-direction: column;
+  height: 65vh;
+  justify-content: space-around;
+  align-items: center; }
+  .testimony .img {
+    background: #ccd0d2;
+    border-radius: 50%;
+    width: 20vh;
+    height: 20vh; }
+  .testimony blockquote {
+    padding: 1vh 10vw;
+    max-width: 700px;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: #666; }
+  .testimony p {
+    text-transform: uppercase;
+    font-weight: 600; }
+  .testimony ol {
+    list-style: circle;
+    display: inline-block; }
+  .testimony li:nth-of-type(3n+2) {
+    list-style: disc; }
 
 body {
   background-color: black; }

@@ -1,0 +1,32 @@
+.testimony {
+  flex-direction: column;
+  height: 65vh;
+  justify-content: space-around;
+  align-items: center;
+  .img {
+    background: $fontColDis;
+    border-radius: 50%;
+    width: 20vh;
+    height: 20vh;
+  }
+  blockquote {
+    padding: 1vh 10vw;
+    max-width: 700px;
+    font-family: $fontHeader;
+    text-align: center;
+    color: $fontColTxt;
+  }
+  p {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  ol {
+    list-style: circle;
+    display: inline-block;
+  }
+  li {
+    &:nth-of-type(3n+2) {
+      list-style: disc;
+    }
+  }
+}
