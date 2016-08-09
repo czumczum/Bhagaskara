@@ -3,7 +3,7 @@
   background-size: cover;
   width: 100vw;
   max-width: 1200px;
-  height: 35vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,9 +20,6 @@
     }
   }
   @media (min-width: $seconDim) {
-    height: 40vh;
-  }
-  @media (min-width: $seconDim) {
-    height: 45vh;
+    height: 70vh;
   }
 }

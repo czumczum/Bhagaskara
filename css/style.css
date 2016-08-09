@@ -439,7 +439,7 @@ main {
   background-size: cover;
   width: 100vw;
   max-width: 1200px;
-  height: 35vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -462,10 +462,7 @@ main {
         margin-top: 25px; } }
   @media (min-width: 680px) {
     .quote {
-      height: 40vh; } }
-  @media (min-width: 680px) {
-    .quote {
-      height: 45vh; } }
+      height: 70vh; } }
 
 .team {
   display: flex;
@@ -682,6 +679,26 @@ main {
   height: 100%;
   background-color: #9f449b;
   width: 10%; }
+
+.statistics {
+  width: 100vw;
+  margin: -1vh 0 0 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 40vh;
+  align-items: center; }
+  .statistics p {
+    width: 40vw;
+    max-width: 150px; }
+    .statistics p span:first-child {
+      color: black;
+      font-size: 4em;
+      display: block; }
+    .statistics p span:last-child {
+      color: #666;
+      font-size: 1.1em; }
 
 body {
   background-color: black; }
