@@ -733,8 +733,16 @@ main {
     padding: 0 0 0 10%;
     list-style: circle;
     align-items: center; }
-  .testimony li.active {
+  .testimony li.current {
     color: #9f449b; }
+  @media (min-width: 680px) {
+    .testimony ul {
+      width: 20vw;
+      padding: 0 0 0 3vw; } }
+  @media (min-width: 1024px) {
+    .testimony ul {
+      width: 10vw;
+      padding: 0 0 0 2vw; } }
 
 .carousel-content {
   display: none; }

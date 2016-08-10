@@ -34,8 +34,20 @@
     align-items: center;
   }
   li {
-    &.active {
+    &.current {
       color: $fontColEm;
+    }
+  }
+  @media (min-width: $seconDim) {
+    ul {
+      width: 20vw;
+      padding: 0 0 0 3vw;
+    }
+  }
+  @media (min-width: $thirDim) {
+    ul {
+      width: 10vw;
+      padding: 0 0 0 2vw;
     }
   }
 }

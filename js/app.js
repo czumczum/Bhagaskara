@@ -78,25 +78,25 @@ $(document).ready(function() {
 
     //Carousel
     var carousel = $('.carousel-content');
-    var dotts = $('.testimony').find('ul');
+    var dotts = $('.dotts');
     var dott;
     carousel.each(function (val) {
         $(this).attr('id', val);
         dott = $('<li>');
         dott.prependTo(dotts);
     });
-    dott.first().addClass('active');
+    dott.first().addClass('current');
     var merryGoRound = function () {
         var current = $('.visible');
-        var currentDott = $('.active');
+        var currentDott = $('.current');
         current.removeClass("visible");
-        currentDott.removeClass('active');
+        currentDott.removeClass('current');
         if (current.attr('id') != 2) {
             current.next().addClass("visible");
-            currentDott.next().addClass('active');
+            currentDott.next().addClass('current');
         } else {
             $('#0').addClass('visible');
-            dott.first().addClass('active');
+            dott.first().addClass('current');
 
         }
     };
