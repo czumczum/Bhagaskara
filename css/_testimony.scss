@@ -8,6 +8,9 @@
     border-radius: 50%;
     width: 20vh;
     height: 20vh;
+    &:hover {
+      background: $fontColTxt;
+    }
   }
   blockquote {
     padding: 1vh 10vw;
@@ -20,13 +23,28 @@
     text-transform: uppercase;
     font-weight: 600;
   }
-  ol {
+  ul {
+    display: flex;
+    width: 40vw;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    padding: 0 0 0 10%;
     list-style: circle;
-    display: inline-block;
+    align-items: center;
   }
   li {
-    &:nth-of-type(3n+2) {
-      list-style: disc;
+    &.active {
+      color: $fontColEm;
     }
+  }
+}
+.carousel-content {
+  display: none;
+  &.visible {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    justify-content: space-between;
   }
 }
