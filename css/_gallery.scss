@@ -1,0 +1,62 @@
+.portfolio {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  height: auto;
+  main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    margin: 5vh 0;
+  }
+  ul {
+    padding: 5vh 5vw;
+  }
+  li {
+    display: inline-block;
+    border: 1px solid $colorBold;
+    color: $colorNormal;
+    font-family: $fontHeader;
+    font-size: 0.8em;
+    border-radius: 10%;
+    padding: 1vh 2vh;
+    text-transform: uppercase;
+    font-weight: 100;
+    &:hover {
+      color: white;
+      background: $colorBold;
+    }
+  }
+}
+.beautifier {
+  display: none;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+}
+figure {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 5vh;
+  img {
+    width: auto;
+    max-width: none;
+  }
+  h3 {
+    margin: 2vh;
+    font-family: $fontText;
+    text-shadow: 1px 0 10px $colorLight;
+    color: $colorNormal;
+  }
+  p {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+  }
+}

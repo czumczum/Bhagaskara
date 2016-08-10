@@ -19,7 +19,7 @@
         @include styleHeader(3vh);
         font-family: $fontText;
         text-transform: uppercase;
-        color: $fontColTxt;
+        color: $colorNormal;
         text-align: left;
         font-weight: 500;
         @media (min-width: $firstDim) {
@@ -33,7 +33,7 @@
       h4 {
         @include styleHeader(2vh);
         font-family: $fontText;
-        color: $fontColTxt;
+        color: $colorNormal;
         text-align: left;
         @media (min-width: $firstDim) {
           text-align: center;
@@ -89,6 +89,6 @@
 .round {
   width: 20vh;
   height: 20vh;
-  background-color: $fontColTxt;
+  background-color: $colorNormal;
   border-radius: 50%;
 }

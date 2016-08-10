@@ -1,7 +1,7 @@
-$fontColEm: #9f449b;
-$fontColTxt: #666;
-$fontColDis: #ccd0d2;
-$bgCol: #eee;
+$colorBold: #9f449b;
+$colorNormal: #666;
+$colorLight: #ccd0d2;
+$colorBackground: #eee;
 
 
 $fontHeader: 'Ubuntu', sans-serif;
@@ -21,6 +21,6 @@ $forthDim: 1200px;
   em {
     font-weight: 300;
     font-style: normal;
-    color: $fontColEm;
+    color: $colorBold;
   }
 }

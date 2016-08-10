@@ -1,5 +1,5 @@
 section {
-  background-color: $bgCol;
+  background-color: $colorBackground;
   display: flex;
   padding-top: 10px;
   width: 100%;
@@ -16,7 +16,7 @@ section {
       font-family: $iconFont;
       font-style: normal;
       font-size: 6vh;
-      color: $fontColDis;
+      color: $colorLight;
       transition: 0.8s;
     }
     .img {
@@ -25,10 +25,10 @@ section {
       transition: 0.8s;
     }
     .img:hover {
-      color: $fontColEm;
+      color: $colorBold;
       background-image: url("../img/hex-hover2.png");
       & i {
-        color: $fontColEm;
+        color: $colorBold;
       }
     }
     @media (min-width: $seconDim) { //wyświetlanie divów z obrazami na większych
@@ -48,7 +48,7 @@ section {
   }
   h2 {
     @include styleHeader(3vh);
-    color: $fontColTxt;
+    color: $colorNormal;
     margin: 10px 0;
     @media (min-width: $seconDim) {
       font-size: 2vh;

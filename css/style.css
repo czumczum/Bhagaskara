@@ -752,6 +752,60 @@ main {
     height: 50vh;
     justify-content: space-between; }
 
+.portfolio {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  height: auto; }
+  .portfolio main {
+    height: auto;
+    display: flex;
+    flex-direction: column; }
+  .portfolio h1 {
+    margin: 5vh 0; }
+  .portfolio ul {
+    padding: 5vh 5vw; }
+  .portfolio li {
+    display: inline-block;
+    border: 1px solid #9f449b;
+    color: #666;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.8em;
+    border-radius: 10%;
+    padding: 1vh 2vh;
+    text-transform: uppercase;
+    font-weight: 100; }
+    .portfolio li:hover {
+      color: white;
+      background: #9f449b; }
+
+.beautifier {
+  display: none; }
+
+.image {
+  display: flex;
+  flex-direction: column; }
+
+figure {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 5vh; }
+  figure img {
+    width: auto;
+    max-width: none; }
+  figure h3 {
+    margin: 2vh;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 1px 0 10px #ccd0d2;
+    color: #666; }
+  figure p {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: center; }
+
 body {
   background-color: black; }
 

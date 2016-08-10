@@ -8,6 +8,7 @@
 @import "skills";
 @import "stats";
 @import "testimony";
+@import "gallery";
 
 body {
 	background-color: black;
@@ -73,16 +74,16 @@ nav {
 			border-bottom: 4px solid transparent;
 			padding: 0 1vw 2vh 1vw;
 			&:hover {
-				border-bottom: 4px solid $fontColEm;
+				border-bottom: 4px solid $colorBold;
 			}
 			&.active {
-				border-bottom: 4px solid $fontColEm;
+				border-bottom: 4px solid $colorBold;
 			}
 		}
 	}
 	h2 {
 		@include styleHeader(3vh);
-		color: $fontColTxt;
+		color: $colorNormal;
 	}
 	ul {
 		display: flex;

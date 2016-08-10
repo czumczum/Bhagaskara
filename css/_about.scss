@@ -11,7 +11,7 @@ main {
   max-width: 1200px;
   h1 {
     @include styleHeader(5vh);
-    color: $fontColTxt;
+    color: $colorNormal;
     background-color: white;
     z-index: 1;
     position: relative;
@@ -32,8 +32,8 @@ main {
       content: '';
       width: 20px;
       height: 20px;
-      border-top: 1px solid $fontColEm;
-      border-right: 1px solid $fontColEm;
+      border-top: 1px solid $colorBold;
+      border-right: 1px solid $colorBold;
       position: absolute;
       right: -15px;
       top: -5px;
@@ -68,7 +68,7 @@ main {
   p {
     padding-top: 20px;
     font-family: $fontText;
-    color: $fontColTxt;
+    color: $colorNormal;
     font-size: 2.2vh;
     width: 80vw;
     line-height: 2;
@@ -95,11 +95,11 @@ main {
       border-radius: 3px;
       box-shadow: 0 1px 1px 1px black;
       margin: 10px 0 0 0;
-      background-color: $fontColEm;
+      background-color: $colorBold;
       text-align: center;
       transition: background-color 0.5s ease;
       &:hover {
-        background-color: $fontColDis;
+        background-color: $colorLight;
       }
       }
     }
