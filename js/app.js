@@ -78,13 +78,13 @@ $(document).ready(function() {
 
     //Carousel
     var carousel = $('.carousel-content');
-    var dotts = $('.dots');
+    var dots = $('.dots');
     var dot;
 
     carousel.each(function (val) {
         $(this).attr('id', val);
         dot = $('<li>');
-        dot.prependTo(dotts);
+        dot.prependTo(dots);
     });
 
     //noinspection JSUnusedAssignment
