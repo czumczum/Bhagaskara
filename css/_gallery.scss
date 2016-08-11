@@ -41,6 +41,12 @@
     width: 100vw;
     max-width: 1200px;
     align-items: center;
+    p {
+      max-height: 80px;
+      margin: 0;
+      margin-bottom: 3vh;
+      align-items: center;
+    }
   }
 .image {
   display: flex;
@@ -103,11 +109,6 @@ figure {
     border-right: 1px solid #ccd0d2;
     border-left: 1px solid #ccd0d2;
     border-bottom: 1px solid #ccd0d2;
-    p {
-      max-height: 80px;
-      margin: 0;
-      align-items: center;
-    }
   }
   .image {
     max-width: 900px;

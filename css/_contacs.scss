@@ -1,0 +1,45 @@
+.contact {
+  display: flex;
+  height: auto;
+  h1 {
+    margin-top: 5vh;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  order: 2;
+  height: 50vh;
+  align-items: center;
+  input {
+    width: 80vw;
+  }
+  textarea {
+    width: 80vw;
+  }
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  order: 1;
+  height: 70vh;
+  p {
+    font-family: $fontHeader;
+    font-weight: 100;
+    align-items: flex-start;
+    em {
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+}
