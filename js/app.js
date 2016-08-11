@@ -109,6 +109,12 @@ $(document).ready(function() {
 
     //Tags selector
     var images = $('figure');
+    images.each(function () {
+        var thisTags = $(this).find('img').attr('data-tags');
+        var span = $('<span>');
+        span.text(thisTags);
+        $(this).find('p').append(span);
+    })
     var tagButton = $('.tags').find('li');
     var sortTags = function(tag) {
         if (tag == "all") {
