@@ -78,27 +78,54 @@ $(document).ready(function() {
 
     //Carousel
     var carousel = $('.carousel-content');
-    var dotts = $('.dotts');
-    var dott;
+    var dotts = $('.dots');
+    var dot;
+
     carousel.each(function (val) {
         $(this).attr('id', val);
-        dott = $('<li>');
-        dott.prependTo(dotts);
+        dot = $('<li>');
+        dot.prependTo(dotts);
     });
-    dott.first().addClass('current');
+
+    //noinspection JSUnusedAssignment
+    dot.first().addClass('current');
+
     var merryGoRound = function () {
         var current = $('.visible');
-        var currentDott = $('.current');
+        var currentDot = $('.current');
         current.removeClass("visible");
-        currentDott.removeClass('current');
+        currentDot.removeClass('current');
+
         if (current.attr('id') != 2) {
             current.next().addClass("visible");
-            currentDott.next().addClass('current');
+            currentDot.next().addClass('current');
         } else {
             $('#0').addClass('visible');
-            dott.first().addClass('current');
-
+            dot.first().addClass('current');
         }
     };
+
     carousel.on("click", merryGoRound);
+
+    //Tags selector
+    var images = $('figure');
+    var tagButton = $('.tags').find('li');
+    var sortTags = function(tag) {
+        if (tag == "all") {
+            return images.removeClass('hidden');
+        }
+        images.each(function() {
+            var thisTags = $(this).find('img').attr('data-tags');
+            if (thisTags.indexOf(tag) >= 0) {
+                $(this).removeClass('hidden');
+            } else {
+                $(this).addClass('hidden');
+            }
+        })
+    };
+
+    tagButton.on("click", function() {
+        var tag = $(this).text().toLowerCase();
+        sortTags(tag);
+    });
 });

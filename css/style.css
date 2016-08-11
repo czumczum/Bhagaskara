@@ -402,7 +402,8 @@ main {
         align-items: flex-start;
         margin-left: 20px;
         justify-content: space-around;
-        height: 45vh; } }
+        height: 45vh;
+        max-height: 200px; } }
     main p a {
       display: block;
       color: white;
@@ -755,12 +756,14 @@ main {
 .portfolio {
   display: flex;
   width: 100vw;
+  max-width: 1200px;
   flex-direction: column;
   height: auto; }
   .portfolio main {
     height: auto;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    background: white; }
   .portfolio h1 {
     margin: 5vh 0; }
   .portfolio ul {
@@ -782,32 +785,79 @@ main {
 .beautifier {
   display: none; }
 
-.image {
+.beautifier-main {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 100vw;
+  max-width: 1200px;
+  align-items: center; }
 
-figure {
+.image {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw; }
+
+figure {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 5vh; }
   figure img {
     width: auto;
-    max-width: none; }
+    max-width: 100vw; }
+    figure img:hover {
+      opacity: 0.5; }
+  figure.hidden {
+    display: none; }
   figure h3 {
-    margin: 2vh;
+    margin: 2vh auto 0 auto;
     font-family: "Roboto", sans-serif;
     text-shadow: 1px 0 10px #ccd0d2;
-    color: #666; }
+    color: black; }
   figure p {
     display: flex;
     flex-direction: row;
     padding: 0;
-    justify-content: center; }
+    margin: 0 auto;
+    justify-content: center;
+    height: auto; }
 
+@media (min-width: 1024px) {
+  .beautifier {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    max-width: 1200px; }
+
+  .color {
+    width: 15vw;
+    background: #eee; }
+
+  .white {
+    width: 100vw;
+    max-width: 900px;
+    background: white;
+    border-top: 1px solid #ccd0d2;
+    border-left: 1px solid #ccd0d2;
+    border-right: 1px solid #ccd0d2; }
+
+  .beautifier-main {
+    max-width: 900px;
+    border-right: 1px solid #ccd0d2;
+    border-left: 1px solid #ccd0d2;
+    border-bottom: 1px solid #ccd0d2; }
+    .beautifier-main p {
+      max-height: 80px;
+      margin: 0;
+      align-items: center; }
+
+  .image {
+    max-width: 900px; } }
 body {
-  background-color: black; }
+  background-color: black;
+  overflow-x: hidden; }
 
 .body {
   display: flex;

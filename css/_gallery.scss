@@ -1,12 +1,14 @@
 .portfolio {
   display: flex;
   width: 100vw;
+  max-width: 1200px;
   flex-direction: column;
   height: auto;
   main {
     height: auto;
     display: flex;
     flex-direction: column;
+    background: white;
   }
   h1 {
     margin: 5vh 0;
@@ -33,30 +35,81 @@
 .beautifier {
   display: none;
 }
+  .beautifier-main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 1200px;
+    align-items: center;
+  }
 .image {
-  display: flex;
-  flex-direction: column;
-}
-figure {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+}
+figure {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 5vh;
   img {
     width: auto;
-    max-width: none;
+    max-width: 100vw;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &.hidden {
+    display: none;
   }
   h3 {
-    margin: 2vh;
+    margin: 2vh auto 0 auto;
     font-family: $fontText;
     text-shadow: 1px 0 10px $colorLight;
-    color: $colorNormal;
+    color: black;
   }
   p {
     display: flex;
     flex-direction: row;
     padding: 0;
+    margin: 0 auto;
     justify-content: center;
+    height: auto;
+  }
+}
+@media (min-width: $thirDim) {
+  .beautifier {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    max-width: 1200px;
+  }
+  .color {
+    width: 15vw;
+    background: $colorBackground;
+  }
+  .white {
+    width: 100vw;
+    max-width: 900px;
+    background: white;
+    border-top: 1px solid $colorLight;
+    border-left: 1px solid $colorLight;
+    border-right: 1px solid $colorLight;
+  }
+  .beautifier-main {
+    max-width: 900px;
+    border-right: 1px solid #ccd0d2;
+    border-left: 1px solid #ccd0d2;
+    border-bottom: 1px solid #ccd0d2;
+    p {
+      max-height: 80px;
+      margin: 0;
+      align-items: center;
+    }
+  }
+  .image {
+    max-width: 900px;
   }
 }
