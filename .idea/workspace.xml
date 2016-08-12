@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c7c0d93a-238d-425a-8fb4-ea453ee7756b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_gallery.scss" afterPath="$PROJECT_DIR$/css/_gallery.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css.map" afterPath="$PROJECT_DIR$/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="Bhagaskara.iws" />
@@ -33,8 +30,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="314" column="22" selection-start-line="314" selection-start-column="22" selection-end-line="314" selection-end-column="22" />
+            <state relative-caret-position="447">
+              <caret line="315" column="12" selection-start-line="315" selection-start-column="12" selection-end-line="315" selection-end-column="12" />
               <folding>
                 <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -374,7 +371,7 @@
       <workItem from="1470742312418" duration="24481000" />
       <workItem from="1470821475298" duration="16607000" />
       <workItem from="1470901002119" duration="13433000" />
-      <workItem from="1470987327606" duration="210000" />
+      <workItem from="1470987327606" duration="274000" />
     </task>
     <task id="LOCAL-00001" summary="Header for tablets">
       <created>1467891097920</created>
@@ -544,11 +541,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470914302832</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="update screen dimensions">
+      <created>1470987597068</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1470987597068</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99589000" />
+    <option name="totallyTimeSpent" value="99653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1370" height="772" extended-state="0" />
@@ -608,7 +612,8 @@
     <MESSAGE value="Contact section" />
     <MESSAGE value="tags" />
     <MESSAGE value="spelling" />
-    <option name="LAST_COMMIT_MESSAGE" value="spelling" />
+    <MESSAGE value="update screen dimensions" />
+    <option name="LAST_COMMIT_MESSAGE" value="update screen dimensions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1095,8 +1100,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="314" column="22" selection-start-line="314" selection-start-column="22" selection-end-line="314" selection-end-column="22" />
+        <state relative-caret-position="447">
+          <caret line="315" column="12" selection-start-line="315" selection-start-column="12" selection-end-line="315" selection-end-column="12" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
