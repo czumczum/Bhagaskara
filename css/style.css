@@ -829,7 +829,7 @@ figure {
     justify-content: center;
     height: auto; }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .beautifier {
     display: flex;
     height: 10vh;
