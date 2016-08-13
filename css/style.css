@@ -931,6 +931,38 @@ form {
   .address {
     width: 40vw;
     max-width: 350px; } }
+.blog {
+  height: 95vh;
+  max-height: 600px; }
+  .blog article {
+    height: 75%;
+    justify-content: space-around;
+    max-height: 350px; }
+    .blog article h2 {
+      color: white;
+      font-size: 3.5vh;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
+      color: #666; }
+      .blog article h2 em {
+        font-weight: 300;
+        font-style: normal;
+        color: #9f449b; }
+    .blog article h3 {
+      color: white;
+      font-size: 2vh;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
+      color: #9f449b; }
+      .blog article h3 em {
+        font-weight: 300;
+        font-style: normal;
+        color: #9f449b; }
+    .blog article p {
+      max-height: 350px; }
+    .blog article a {
+      margin-top: 30px; }
+
 body {
   background-color: black;
   overflow-x: hidden; }

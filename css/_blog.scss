@@ -1,0 +1,23 @@
+.blog {
+  height: 95vh;
+  max-height: 600px;
+  article {
+    height: 75%;
+    justify-content: space-around;
+    max-height: 350px;
+    h2 {
+      @include styleHeader(3.5vh);
+      color: $colorNormal
+    }
+    h3 {
+      @include styleHeader(2vh);
+      color: $colorBold;
+    }
+    p {
+      max-height: 350px;
+    }
+    a {
+      margin-top: 30px;
+    }
+  }
+}
