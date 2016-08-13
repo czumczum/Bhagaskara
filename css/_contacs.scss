@@ -3,12 +3,14 @@
   height: auto;
   h1 {
     margin-top: 5vh;
+    margin-bottom: 0;
   }
 }
 .form {
   display: flex;
   flex-direction: column;
   width: 100vw;
+  max-width: 1200px;
   justify-content: center;
   align-items: center;
 }
@@ -16,14 +18,19 @@ form {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  order: 2;
-  height: 50vh;
+  height: 60vh;
   align-items: center;
-  input {
+  font-family: $fontText;
+  margin-top: 5vh;
+  input, textarea {
     width: 80vw;
+    padding: 1vh 2vw;
+    margin: 1vh 0;
+    border: 1px solid $colorLight;
+    font-family: $fontText;
   }
   textarea {
-    width: 80vw;
+    height: 25vh;
   }
 }
 .address {
@@ -31,15 +38,52 @@ form {
   flex-direction: column;
   justify-content: center;
   width: 100vw;
-  order: 1;
-  height: 70vh;
+  height: 50vh;
+  min-height: 350px;
   p {
     font-family: $fontHeader;
     font-weight: 100;
     align-items: flex-start;
+    &:last-of-type {
+      display: flex;
+      flex-direction: row;
+      span {
+        padding: 0.2em 1em;
+        border-radius: 50%;
+        border: 1px solid $colorLight;
+        margin: 0 2vw;
+      }
+    }
     em {
       font-style: normal;
       font-weight: 700;
     }
+  }
+}
+@media (min-width: $firstDim) {
+  .form {
+    flex-direction: row;
+    p {
+      width: 100%;
+      max-width: 300px;
+      justify-content: center;
+      &:last-of-type {
+        span {
+          margin: 0 0.5vw;
+        }
+      }
+    }
+  }
+  form {
+    width: 55vw;
+    max-width: 550px;
+    input, textarea {
+      width: 50vw;
+      max-width: 400px;
+    }
+  }
+  .address {
+    width: 40vw;
+    max-width: 350px;
   }
 }

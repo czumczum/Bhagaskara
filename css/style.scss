@@ -99,3 +99,16 @@ nav {
 		font-family: $fontHeader;
 	}
 }
+footer {
+  width: 100vw;
+  max-width: 1200px;
+  background: white;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    @include styleHeader(3vh);
+    color: $colorNormal;
+  }
+}
